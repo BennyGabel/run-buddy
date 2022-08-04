@@ -39,14 +39,26 @@ header nav {
   margin: 7px 0;
 }
 
+
+/*   When changing to FLEX, will remove previous    header nav ul li
 header nav ul li {
   display: inline;
 }
+*/
 
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
-  font-size: 22px;
+  font-size: 1.55vw;                 /*  22px  */  /*  vw = Viewport Width  -  ViewPort = Actual Browser Windows Size */
+}
+
+
+header nav ul {
+  display: flex;                     /*  FLEX  */
+  flex-wrap: wrap;                   /*  FLEX  */
+  justify-content: space-between;    /*  FLEX  */
+  align-items: center;
+  list-style: none;
 }
 
 footer {
